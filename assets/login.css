@@ -1,0 +1,165 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d0cef2;
+  color: white;
+}
+.main {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    width: 80%;
+    max-width: 800px;
+    min-width: 240px;
+    background-color: #B0ADE2;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 6px 10px 5px #818187;
+    justify-content: space-between;
+  }
+.login {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 80%;
+    background-color: #B0ADE2;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    gap: 10px;
+    /* box-shadow: 6px 10px 5px #818187; */
+  }
+  .side{
+    display: flex;
+    justify-content: space-around;
+    background-color: #212c45;
+    width: 100%;
+    border-radius: 15px;
+    padding: auto;
+    
+  }
+  .image{
+    width: 200px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  form {
+    color: #212c45;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  form input{
+    width: 200px;
+    height: 22px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    outline: none;
+
+  }
+  .submit{
+    height: 22px;
+    width: 80px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .submit:hover {
+    background-color: #795ce3;
+}
+
+  .register {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 200px;
+    background-color: #B0ADE2;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    
+  }
+
+  #notifications-reg{
+    color: rgb(181, 14, 14);
+  }
+  @media (min-width: 600px){
+    .imge{
+      display: none;
+    }
+  }
+  
+  @media (max-width: 600px){
+    .main{
+      min-width: 200px;
+      height: 80%;
+      padding: 10px;
+    }
+    .side{
+      display: none;
+    }
+    .register{
+      width: 100%;
+      min-width: 150px;
+    }
+    .login{
+      width: 100%;
+      min-width: 150px;
+      /* border: solid; */
+    }
+    form {
+      width:100%;
+      min-width: 150px;
+      color: #212c45;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+    form input{
+      width: 90%;
+      min-width: 150px;
+      max-width: 300px;
+      height: 22px;
+      border-radius: 5px;
+      border: none;
+      padding: 5px;
+      outline: none;
+      
+      
+    }
+    .form{
+      height: 100%;
+      width:100%;
+      min-width: 150px;
+      color: #212c45;
+      margin-top:-50px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      align-items: center;
+      
+    }
+    .imge{
+      width: 150px;
+    }
+  }
