@@ -36,4 +36,22 @@ describe('user registration', () => {
 
   })
 
+
+  it('returns registration failed incase of using email which is already in database', () => {
+    cy.visit('http://localhost:5500/register.html')
+
+    
+    cy.get('#full-name').type('John Doe');
+    cy.get('#cohort_number').type('17');
+    cy.get('#email').type('benard.siloma@gmail.com');
+    cy.get('#password').type('12345678');
+    cy.get('#password2').type('12345678');
+
+    cy.get('#submit').click();
+
+    cy.get("#notifications-reg").contains("User registration failed")
+
+
+  })
+
 })
